@@ -13,6 +13,9 @@ public class Main {
             }
             AnalyzerEngine analyzerEngine = new AnalyzerEngine();
             analyzerEngine.analyze(file);
+        } else {
+            System.out.println("Please input the target directory/file as argument");
+            System.exit(1);
         }
     }
 
