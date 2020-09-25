@@ -1,0 +1,128 @@
+{
+  "signatures": [
+    {
+      "regex": "-----BEGIN [EC|RSA|DSA|OPENSSH] PRIVATE KEY----",
+      "name": "Contains a private key"
+    },
+    {
+      "regex": "(A3T[A-Z0-9]|AKIA|AGPA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}",
+      "name": "AWS Access Key ID Value"
+    },
+    {
+      "regex": "EAACEdEose0cBA[0-9A-Za-z]+",
+      "name": "Facebook access token"
+    },
+    {
+      "regex": "(?:r|s)k_[live|test]_[0-9a-zA-Z]{24}",
+      "name": "Stripe API key"
+    },
+    {
+      "regex": "[0-9]+-[0-9A-Za-z_]{32}\\.apps\\.googleusercontent\\.com",
+      "name": "Google OAuth Key"
+    },
+    {
+      "regex": "AIza[0-9A-Za-z\\\\-_]{35}",
+      "name": "Google Cloud API Key"
+    },
+    {
+      "regex": "ya29\\\\.[0-9A-Za-z\\\\-_]+",
+      "name": "Google OAuth Access Token"
+    },
+    {
+      "regex": "sk_[live|test]_[0-9a-z]{32}",
+      "name": "Picatic API key"
+    },
+    {
+      "regex": "sq0atp-[0-9A-Za-z\\-_]{22}",
+      "name": "Square Access Token"
+    },
+    {
+      "regex": "sq0csp-[0-9A-Za-z\\-_]{43}",
+      "name": "Square OAuth Secret"
+    },
+    {
+      "regex": "access_token\\$production\\$[0-9a-z]{16}\\$[0-9a-f]{32}",
+      "name": "PayPal/Braintree Access Token"
+    },
+    {
+      "regex": "amzn\\.mws\\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}",
+      "name": "Amazon MWS Auth Token"
+    },
+    {
+      "regex": "SK[0-9a-fA-F]{32}",
+      "name": "Twilo API Key"
+    },
+    {
+      "regex": "key-[0-9a-zA-Z]{32}",
+      "name": "MailGun API Key"
+    },
+    {
+      "regex": "[0-9a-f]{32}-us[0-9]{12}",
+      "name": "MailChimp API Key"
+    },
+    {
+      "regex": "(https\\\\://outlook\\\\.office.com/webhook/[0-9a-f-]{36}\\\\@)",
+      "name": "Outlook team"
+    },
+    {
+      "regex": "(xox[pboa]-[0-9]{12}-[0-9]{12}-[0-9]{12}-[a-z0-9]{32})",
+      "name": "Slack Token"
+    },
+    {
+      "regex": "https://hooks.slack.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}",
+      "name": "Slack Webhook"
+    },
+    {
+      "regex": "EAACEdEose0cBA[0-9A-Za-z]+",
+      "name": "Facebook access token"
+    },
+    {
+      "regex": "AIza[0-9A-Za-z\\-_]{35}",
+      "name": "Firebasetokens"
+    },
+    {
+      "regex": "(^secretkey-[A-Za-z0-9_\\-]+)$",
+      "name": "secretkeys"
+    },
+    {
+      "regex": "0-9A-Za-z\\-_]{17,20}",
+      "name": "ProductAPIkeys"
+    },
+    {
+      "regex": "[0-9a-zA-Z]{32,34}",
+      "name": "sensitive keys"
+    },
+    {
+      "regex": "[0-9A-Za-z\\-_]{20,40}",
+      "name": "sensitive keys"
+    },
+    {
+      "regex": "(^Bearer [A-Za-z0-9-_=]+\\.[A-Za-z0-9-_=]+\\.?[A-Za-z0-9-_.+/=]*$)",
+      "name": "Bearer token"
+    },
+    {
+      "regex": "^[A-Za-z0-9-_=]+\\.[A-Za-z0-9-_=]+\\.?[A-Za-z0-9-_.+/=]*$",
+      "name": "Mapbox Key or JWT Key"
+    },
+    {
+      "regex": "(Bearer [a-zA-Z0-9\\.\/\\-_]+)$",
+      "name": "Authorization token"
+    },
+    {
+      "regex": "^(EJ\\[1:[0-9A-Za-z+=:\/]+\\])([0-9A-Za-z]+)?",
+      "name": "Boxtokens"
+    },
+    {
+      "regex": "(Basic [a-zA-Z0-9=]+)",
+      "name": "Basic token"
+    },
+    {
+      "regex": "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$",
+      "name": "Email Address"
+    },
+    {
+      "regex": "\\s+[789]\\d{9}\\s+",
+      "name": "Phone Number"
+    }
+  ]
+}
