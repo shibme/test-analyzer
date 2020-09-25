@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 curl -o /usr/local/bin/ta.jar -J -L -H "Accept: application/octet-stream" "https://github.com/shibme/test-analyzer/releases/download/1.0.0/ta.jar"
-echo "java -jar /usr/local/bin/ta.jar $@" > /usr/local/bin/ta
+echo "java -jar /usr/local/bin/ta.jar \$@" > /usr/local/bin/ta
 chmod +x /usr/local/bin/ta
