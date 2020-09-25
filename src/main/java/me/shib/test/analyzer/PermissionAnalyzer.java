@@ -6,6 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.attribute.PosixFileAttributeView;
 import java.nio.file.attribute.PosixFileAttributes;
 import java.nio.file.attribute.PosixFilePermission;
+import java.nio.file.attribute.PosixFilePermissions;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -28,7 +29,7 @@ public class PermissionAnalyzer implements Analyzer {
         PosixFileAttributes attributes = posixView.readAttributes();
         for (PosixFilePermission permission : attributes.permissions()) {
             if (insecureFilePermissions.contains(permission)) {
-                return "Insecure Directory Permission found!";
+                return "Insecure File Permissions found: " + PosixFilePermissions.toString(attributes.permissions());
             }
         }
         return null;
